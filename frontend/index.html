@@ -8,48 +8,61 @@
 </head>
 <body>
 
-    <div class="container">
-        <div class="image-container">
-            <!-- Insira a imagem de fundo do restaurante aqui -->
-            <img src="/frontend/img/background.jpg" alt="background-img" class="background-img">
-        </div>
-        
-        <div class="content">
-            <div class="logo">
-                <img src="/frontend/img/logo.png" alt="logo" class="logo-img">
-            </div>
-            
-            <h1>Borcelle Manaus</h1>
-            <p>Manaus • Amazonas</p>
-
-            <div class="form-container">
-                <div class="form-group">
-                    <label for="telefone">Telefone com DDD</label>
-                    <input type="tel" id="telefone" placeholder="(92) 91234-5678">
-                </div>
-
-                <div class="form-group">
-                    <label for="nome">Nome e Sobrenome</label>
-                    <input type="text" id="nome" placeholder="Ex: Pedro Guimarães">
-                </div>
-
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" placeholder="Ex: pedro@gmail.com">
-                </div>
-
-                
-
-                
-
-                <p class="termos">
-                    Ao continuar, você aceita os termos de serviço e reserva do Borcelle Restaurante e aceita receber contatos com relação aos serviços prestados.
-                </p>
-
-                <button type="submit" class="btn-reservar">Reservar</button>
-            </div>
-        </div>
+<div class="container">
+    <div class="image-container">
+        <img src="C:/Users/alunoibc/IdeaProjects/ReservaApi-main/frontend/img/background.jpg" alt="background-img" class="background-img">
     </div>
+
+    <div class="content">
+        <div class="logo">
+            <img src="C:/Users/alunoibc/IdeaProjects/ReservaApi-main/frontend/img/logo.png" alt="logo" class="logo-img">
+        </div>
+
+        <h1>Borcelle Manaus</h1>
+        <p>Manaus • Amazonas</p>
+
+        <form class="form-container" action="concluido.html" method="POST">
+            <div class="form-group">
+                <label for="data">Data da Reserva</label>
+                <input type="date" id="data" required>
+            </div>
+
+            <div class="form-group">
+                <label for="hora">Horário da Reserva</label>
+                <select id="hora" required>
+                    <option value="" disabled selected>Selecione um horário</option>
+                    <option value="18:00">18:00</option>
+                    <option value="19:00">19:00</option>
+                    <option value="20:00">20:00</option>
+                    <option value="21:00">21:00</option>
+                    <option value="22:00">22:00</option>
+                    <option value="23:00">23:00</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="telefone">Telefone com DDD</label>
+                <input type="tel" id="telefone" placeholder="(92) 91234-5678" required>
+            </div>
+
+            <div class="form-group">
+                <label for="nome">Nome e Sobrenome</label>
+                <input type="text" id="nome" placeholder="Ex: Pedro Guimarães" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Ex: pedro@gmail.com" required>
+            </div>
+
+            <p class="termos">
+                Ao continuar, você aceita os termos de serviço e reserva do Borcelle Restaurante e aceita receber contatos com relação aos serviços prestados.
+            </p>
+
+            <button type="submit" class="btn-reservar">Reservar</button>
+        </form>
+    </div>
+</div>
 
 </body>
 </html>
