@@ -3,41 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reserva de Mesas</title>
+    <title>Borcelle Manaus - Reserva</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>Reserva de Mesas</h1>
 
-<h2>Criar Mesa</h2>
-<form id="mesaForm">
-    <label for="quantidadeDeLugares">Quantidade de Lugares:</label>
-    <input type="number" id="quantidadeDeLugares" required>
-    <button type="submit">Criar Mesa</button>
-</form>
+    <div class="container">
+        <div class="image-container">
+            <!-- Insira a imagem de fundo do restaurante aqui -->
+            <img src="/frontend/img/background.jpg" alt="background-img" class="background-img">
+        </div>
+        
+        <div class="content">
+            <div class="logo">
+                <img src="/frontend/img/logo.png" alt="logo" class="logo-img">
+            </div>
+            
+            <h1>Borcelle Manaus</h1>
+            <p>Manaus • Amazonas</p>
 
-<h2>Criar Usuário</h2>
-<form id="usuarioForm">
-    <label for="nome">Nome:</label>
-    <input type="text" id="nome" required>
-    <label for="email">Email:</label>
-    <input type="email" id="email" required>
-    <label for="telefone">Telefone:</label>
-    <input type="text" id="telefone" required>
-    <button type="submit">Criar Usuário</button>
-</form>
+            <div class="form-container">
+                <div class="form-group">
+                    <label for="telefone">Telefone com DDD</label>
+                    <input type="tel" id="telefone" placeholder="(92) 91234-5678">
+                </div>
 
-<h2>Reservar Mesa</h2>
-<form id="reservaForm">
-    <label for="mesaId">ID da Mesa:</label>
-    <input type="number" id="mesaId" required>
-    <label for="usuarioId">ID do Usuário:</label>
-    <input type="number" id="usuarioId" required>
-    <label for="dataReserva">Data e Hora da Reserva:</label>
-    <input type="datetime-local" id="dataReserva" required>
-    <button type="submit">Reservar Mesa</button>
-</form>
+                <div class="form-group">
+                    <label for="nome">Nome e Sobrenome</label>
+                    <input type="text" id="nome" placeholder="Ex: Pedro Guimarães">
+                </div>
 
-<script src="script.js"></script>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Ex: pedro@gmail.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="aniversario">Aniversário</label>
+                    <input type="date" id="aniversario">
+                </div>
+
+                
+
+                <p class="termos">
+                    Ao continuar, você aceita os termos de serviço e reserva do Borcelle Restaurante e aceita receber contatos com relação aos serviços prestados.
+                </p>
+
+                <button type="submit" class="btn-reservar">Reservar</button>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>
