@@ -48,10 +48,10 @@ body {
 .logo-img {
     width: 111px;
     height: 109;
-    position:absolute;
+    position:relative;
     box-sizing: border-box;
-    left: 310px;
-    top: 750px;
+
+    display: flex;
     border-radius: 7.6px;
     
     background: linear-gradient(174.71deg, #FFFFFF 4.24%, #FFFFFF 24.02%, #FFFFFF 45.51%, #E5E5E5 75.64%, #D1D1D1 99.44%);
