@@ -30,16 +30,7 @@ function cadastrar() {
       throw new Error('Erro ao cadastrar');
     }
   })
-  .then(data => {
-    console.log("Cadastro realizado:", data);
-    alert("Cadastro realizado com sucesso!");
-    listarPessoas(); // Atualiza a lista de pessoas
-    limpar(); // Limpa os campos do formulário
-  })
-  .catch(error => {
-    console.error("Erro:", error);
-    alert("Erro ao realizar o cadastro!");
-  });
+  window.location.href = 'reserva.html';
 }
 
 // Função para limpar os campos do formulário
