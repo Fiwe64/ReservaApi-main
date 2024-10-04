@@ -4,12 +4,12 @@ document.addEventListener('DOMContentLoaded', function () {
     // Função para buscar mesas criadas e preencher o select
     async function carregarMesas() {
         try {
-            const response = await fetch('http://localhost:8080/mesas');
+            const response = await fetch('http://localhost:8080/mesas');  // Chamada ao backend
             if (!response.ok) {
                 throw new Error(`Erro ao buscar mesas: ${response.status}`);
             }
 
-            const mesas = await response.json();
+            const mesas = await response.json();  // Converte a resposta para JSON
 
             // Limpar as opções anteriores
             mesaSelect.innerHTML = '<option value="">Selecione uma mesa</option>';
@@ -17,8 +17,8 @@ document.addEventListener('DOMContentLoaded', function () {
             // Preencher o select com as mesas e suas respectivas quantidades de lugares
             mesas.forEach(mesa => {
                 const option = document.createElement('option');
-                option.value = mesa.id;  // ID da mesa é o value
-                option.textContent = `Mesa ${mesa.id} - ${mesa.quantidadeDeLugares} lugares`;
+                option.value = mesa.id;  // O valor da opção será o ID da mesa
+                option.textContent = `Mesa ${mesa.id} - ${mesa.quantidadeDeLugares} lugares`;  // Exibe o ID e os lugares
                 mesaSelect.appendChild(option);
             });
         } catch (error) {
