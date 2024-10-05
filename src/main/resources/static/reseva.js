@@ -29,7 +29,7 @@ function cadastrarUsuario() {
     })
     .then(response => {
         if (response.ok) {
-            return response.json();
+            window.location.href = 'reservaTeste.html';
         } else {
             throw new Error('Erro ao cadastrar usuário');
         }

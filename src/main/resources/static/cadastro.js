@@ -30,7 +30,7 @@ function cadastrar() {
       throw new Error('Erro ao cadastrar');
     }
   })
-  window.location.href = 'reserva.html';
+  window.location.href = 'reservaTeste.html';
 }
 
 // Função para limpar os campos do formulário
