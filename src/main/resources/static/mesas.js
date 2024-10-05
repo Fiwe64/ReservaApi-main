@@ -80,6 +80,7 @@ function selecionarMesa(mesaId) {
         console.error("Erro ao realizar a reserva:", error);
         alert("Erro ao realizar a reserva!");
     });
+    window.location.href = 'concluido.html';
 }
 
 

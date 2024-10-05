@@ -15,5 +15,5 @@ document.querySelector("#form-reserva-data").addEventListener("submit", function
     localStorage.setItem("horaReserva", horaReserva);
 
     // Redireciona para a página de seleção de mesas
-    window.location.href = 'reservaTeste.html';
+    window.location.href = 'mesas.html';
 });
