@@ -65,10 +65,7 @@ function reservarMesa(usuarioId) {
         alert("Reserva realizada com sucesso!");
         limparFormulario();
     })
-    .catch(error => {
-        console.error("Erro:", error);
-        alert("Erro ao realizar a reserva!");
-    });
+    
 }
 
 // Função para limpar o formulário

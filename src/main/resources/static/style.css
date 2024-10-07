@@ -48,7 +48,9 @@ body {
 .logo-img {
     width: 111px;
     height: 109;
-    position:relative;
+    left:16px;
+    bottom: 10px;
+    position:absolute;
     box-sizing: border-box;
 
     display: flex;

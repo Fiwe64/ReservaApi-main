@@ -16,11 +16,14 @@ function listarMesas() {
 
         // Gerar o HTML para a lista de mesas
         const listaHTML = mesas.map(mesa => `
-            <div class="mesa-item">
+            
+            <div class="form-container content">
+            <div class="form-group mesa-item">
                 <p>Mesa ID: ${mesa.id}</p>
                 <p>Número de Lugares: ${mesa.quantidadeDeLugares}</p>
                 <p>Disponível: ${mesa.disponivelParaReserva ? 'Sim' : 'Não'}</p>
-                ${mesa.disponivelParaReserva ? `<button onclick="selecionarMesa(${mesa.id})">Selecionar</button>` : ''}
+                ${mesa.disponivelParaReserva ? `<button onclick="selecionarMesa(${mesa.id})" class="btn-reservar" >Selecionar</button>` : ''}
+            </div>
             </div>
         `).join("");
 
@@ -76,10 +79,6 @@ function selecionarMesa(mesaId) {
         console.log("Reserva realizada:", reserva);
         alert("Reserva realizada com sucesso!");
     })
-    .catch(error => {
-        console.error("Erro ao realizar a reserva:", error);
-        alert("Erro ao realizar a reserva!");
-    });
     window.location.href = 'concluido.html';
 }
 
