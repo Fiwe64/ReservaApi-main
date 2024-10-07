@@ -1,9 +1,0 @@
-CREATE TABLE reservas (
-    id BIGINT AUTO_INCREMENT PRIMARY KEY,
-    mesa_id BIGINT NOT NULL,
-    reservado_por_id BIGINT NOT NULL,
-    reservado_para DATETIME NOT NULL,
-    criado_em DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    FOREIGN KEY (mesa_id) REFERENCES mesa(id),
-    FOREIGN KEY (reservado_por_id) REFERENCES usuario(id)
-);
