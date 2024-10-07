@@ -1,5 +1,0 @@
-CREATE TABLE mesas (
-    id BIGINT AUTO_INCREMENT PRIMARY KEY,
-    quantidade_de_lugares INT NOT NULL,
-    disponivel_para_reserva BOOLEAN NOT NULL DEFAULT TRUE
-);
